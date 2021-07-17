@@ -1,4 +1,6 @@
-FROM debian:buster-slim
+ARG BASE_IMAGE=debian:buster-slim
+FROM $BASE_IMAGE
+
 LABEL maintainer "staf wagemakers <staf@wagemakers.be>"
 
 RUN groupadd debian-tor -g 5000101
